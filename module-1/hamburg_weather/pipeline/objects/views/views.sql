@@ -7,7 +7,7 @@ SELECT
     TO_VARCHAR(hd.date_valid_std, 'YYYY-MM') AS yyyy_mm,
     pc.city_name AS city,
     c.country AS country_desc
-FROM FROSTBYTE_WHETHERSOURCE.onpoint_id.history_day hd
+FROM FROSTBYTE_WHETHERSOURCE.onpoint_id.history_day hd 
 JOIN FROSTBYTE_WHETHERSOURCE.onpoint_id.postal_codes pc
     ON pc.postal_code = hd.postal_code
     AND pc.country = hd.country
